@@ -1,0 +1,5 @@
+jobs/
+results_cli/
+.venv/
+__pycache__/
+*.pyc

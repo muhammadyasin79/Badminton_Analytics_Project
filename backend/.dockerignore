@@ -1,0 +1,17 @@
+backend/.venv/
+backend/jobs/
+backend/results_cli/
+**/__pycache__/
+*.pyc
+# heavy/irrelevant project dirs (keep image small)
+datasets/
+results/
+results_weixin/
+web_app/
+notebooks/
+videos/
+docs/
+*.mp4
+*.png
+Thumbnail.png
+!yolov8s-pose.pt

@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "羽毛球姿态分析",
+    "slug": "badminton-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "用于选择本地羽毛球视频进行分析",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "用于选择本地羽毛球视频进行分析"
+        }
+      ],
+      "expo-video",
+      "expo-asset",
+      "expo-status-bar"
+    ]
+  }
+}

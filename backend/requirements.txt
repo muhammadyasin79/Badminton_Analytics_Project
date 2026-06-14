@@ -1,0 +1,15 @@
+# Backend API + analysis pipeline deps.
+# Pin major libs; install into a Python 3.12 venv (torch has no 3.14 wheels yet).
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9   # required by FastAPI for multipart/form-data uploads
+
+# analysis pipeline (same libs the original scripts use)
+ultralytics>=8.1
+opencv-python>=4.9
+scikit-learn>=1.4
+numpy>=1.26
+matplotlib>=3.8
+# torch/torchvision are pulled in by ultralytics; on Apple Silicon the default
+# wheels include MPS support. On a CUDA cloud host install the cuda build and
+# set BAD_DEVICE=cuda (or =cpu) instead of the default mps.
